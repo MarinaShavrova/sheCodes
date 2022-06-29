@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather-app">
+            <form class="search-form">
+                <div class="row">
+                    <div class="col-9">
+                        <input type="search" placeholder="Type a city.." autofocus="on" autocomplete="off"
+                            class="form-control shadow-sm" id="search-input" />
+                    </div>
+                    <div class="col-3">
+                        <input type="submit" value="Search" class="form-control btn btn-primary shadow-sm" />
+                   
+                        <input id="current-button" value="Current" class="form-control btn btn-current shadow-sm" />
+                    </div>
+                </div>
+            </form>
+            <h1></h1>
+            <ul>
+                <li id="date-today"></li>
+                <li id = "state-weather"></li>
+            </ul>
+            <div class="row">
+                <div class="col-6">
+                    <div class="clearfix">
+                        <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="Cloudy icon"
+                            class="weather-icon float-left" />
+                        <div class="float-left" id="test">
+                            <span class="temperature" id="temperature"></span>
+                            <span class="units">
+                                <a class="not-active" href="#" id="c">°C </a>
+                                | <a href="#" id="f">°F</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <ul>
+                        <li>
+                            Precipitation:
+                            <span id="precipitation">0%</span>
+                        </li>
+                        <li>
+                            Humidity: 
+                            <span id="humidity"></span>
+                        </li>
+                        <li>
+                            Wind: 
+                            <span id="wind"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="src/index.js"></script>
+</body>
+
+</html>
