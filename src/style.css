@@ -1,5 +1,5 @@
 body {
-    font-size: 1rem;
+        font-size: 1rem;
         font-weight: 600;
         line-height: 1.5;
         color: #212529;
@@ -22,7 +22,7 @@ body {
     max-width: 800px;
 }
 
-.form-control {
+.form-control {  
     display: block;
     width: 100%;
     height: calc(1.5em + 0.75rem + 2px);
@@ -44,11 +44,13 @@ h1 {
     font-weight: 100;
     line-height: 28px;
     margin: 0;
+    margin-left: 10px;
     padding: 20px 0;
     text-transform: capitalize;
 }
 
 .btn-primary {
+    margin-right: 20px;
     color: #fff;
     background-color: #007bff;
     border-color: #007bff;
@@ -61,7 +63,7 @@ h1 {
 }
 
 .btn-current {
-    margin-left: 20px;
+    margin-right: 10px;
     color: #fff;
     background-color: #28a745;
     border-color: #28a745;
@@ -80,6 +82,7 @@ ul {
 }
 
 li {
+    margin-left: 10px;
     color: #7c7c7c;
     font-size: 16px;
     font-weight: 100;
@@ -115,7 +118,21 @@ li {
     text-transform: capitalize;
 }
 
-.col-3{
+.input-city{
+    width: 53%;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+.button-two{
     display: flex;
+    width: 40%;
+     
 }
 
+
+.link-github{
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+}
